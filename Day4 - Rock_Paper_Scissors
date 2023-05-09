@@ -44,20 +44,20 @@ random = random.randint(0, 2)
 print(rock_paper_scissors[random])
  
 if player_choice == "0" and random == 0:
-  print("It is a draw")
+  print("It is a draw.")
 if player_choice == "1" and random == 1:
-  print("It is a draw")
+  print("It is a draw.")
 if player_choice == "2" and random == 2:
-  print("It is a draw")
+  print("It is a draw.")
 if player_choice == "0" and random == 1:
-  print("You lose")
+  print("Computer wins.")
 if player_choice == "0" and random == 2:
-  print("You win")
+  print("You win.")
 if player_choice == "1" and random == 0:
-  print("You win")
+  print("You win.")
 if player_choice == "1" and random == 2:
-  print("You lose")
+  print("Computer wins.")
 if player_choice == "2" and random == 0:
-  print("You lose")
+  print("Computer wins.")
 if player_choice == "2" and random == 1:
-  print("You win")
+  print("You win.")

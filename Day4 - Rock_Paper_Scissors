@@ -28,36 +28,38 @@ scissors = '''
 #Write your code below this line 👇
 import random 
 
-player_choice = input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for scissors.\n")
-
-print("You chose:")
-if player_choice == "0":
-  print(rock)
-elif player_choice == "1":
-  print(paper)
-elif player_choice == "2":
-  print(scissors)
-
+player_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for scissors.\n"))
+if player_choice >= 0 and player_choice<= 2:
+  print("You chose:")
+  if player_choice == 0:
+    print(rock)
+  elif player_choice == 1:
+    print(paper)
+  elif player_choice == 2:
+    print(scissors)
+else: 
+  print("You typed an invalid number, please try again.")
+  
 print("Computer chose:")
 rock_paper_scissors = [rock, paper, scissors]
 random = random.randint(0, 2)
 print(rock_paper_scissors[random])
  
-if player_choice == "0" and random == 0:
+if player_choice == 0 and random == 0:
   print("It is a draw.")
-if player_choice == "1" and random == 1:
+if player_choice == 1 and random == 1:
   print("It is a draw.")
-if player_choice == "2" and random == 2:
+if player_choice == 2 and random == 2:
   print("It is a draw.")
-if player_choice == "0" and random == 1:
+if player_choice == 0 and random == 1:
   print("Computer wins.")
-if player_choice == "0" and random == 2:
+if player_choice == 0 and random == 2:
   print("You win.")
-if player_choice == "1" and random == 0:
+if player_choice == 1 and random == 0:
   print("You win.")
-if player_choice == "1" and random == 2:
+if player_choice == 1 and random == 2:
   print("Computer wins.")
-if player_choice == "2" and random == 0:
+if player_choice == 2 and random == 0:
   print("Computer wins.")
-if player_choice == "2" and random == 1:
+if player_choice == 2 and random == 1:
   print("You win.")
